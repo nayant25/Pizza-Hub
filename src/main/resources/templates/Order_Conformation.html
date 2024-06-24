@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <p>Thank you for your order, <span th:text="${order.user.name}"></span>!</p>
+    <p>Your order details:</p>
+    <ul>
+        <li>Pizza Type: <span th:text="${order.pizzaType}"></span></li>
+        <li>Pizza Variant: <span th:text="${order.pizzaVariant}"></span></li>
+        <li>Extra Cheese: <span th:text="${order.extraCheese ? 'Yes' : 'No'}"></span></li>
+        <li>Extra Toppings: <span th:text="${order.extraToppings ? 'Yes' : 'No'}"></span></li>
+        <li>Takeaway: <span th:text="${order.takeaway ? 'Yes' : 'No'}"></span></li>
+        <li>Total Price: <span th:text="${order.totalPrice}"></span> Rs</li>
+    </ul>
+</body>
+</html> 

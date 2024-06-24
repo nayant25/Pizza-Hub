@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* High z-index to stay above other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    margin-left: 25%;
+    height: 40px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 20px;
+    margin-right: 5px;
+}
+/*-----------------------------main---------------------------*/
+
+main {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/*--------slider----*/
+.container {
+	padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+    overflow: hidden; /* Add this to hide overflow */
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden; /* Change from auto to hidden */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 0.5rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+/*----------tag-line-----------*/
+.tag-line {
+	margin-left: 3%;
+	padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.tag-line h1 {
+	
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #fcd8c4;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+     /* Ensures no extra margin around h1 */
+}
+
+.tag-line span {
+    display: flex;
+    align-items: center;
+}
+
+.tag-line img {
+	margin-left: -10px;
+    display: block; /* Ensures the image respects the flexbox alignment */
+    height: 80px;
+}
+
+/*-------------------App Ratings------------------------------------*/
+.classRating{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5rem;
+}
+
+.classRating .appStore{
+	display: flex;
+}
+.classRating .appStore #icons{
+	margin-top: 2rem;
+	margin-right: 1rem;
+	height: 60px;
+}
+.classRating .appStore h1{
+	margin-top: 2.6rem;
+	margin-right: 1rem;
+}
+.classRating .appStore img{
+	margin-top: 3.1rem;
+	height: 20px;
+}
+/*------------------------------------------------------------------*/
+.brand-line h1{
+	margin-left: 6%;
+	color: orange;
+}
+.brand-line h1 span{
+	color: black;
+}
+.brand-line hr {
+    border: 2px solid orange; /* Makes the hr bold and orange */
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.brand-container{
+	padding: 2rem;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	border-radius: 0.3rem;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.brand-container img{
+	height: 60px;
+	width: 60px;
+	
+}
+
+/*------------order Now--------    .food-imgs-section2 .food-imgs-section3 .food-imgs-section4 .food-imgs-section5 .food-imgs-section6  -----------------------------------------------*/
+
+.order {
+    margin-top: 1rem;
+    margin-left: 6%;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.orderNow-img {
+	margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap; /* Allow the images to wrap if they exceed the container width */
+}
+
+.orderNow-img img {
+    height: 300px;
+    width: 350px;
+    margin: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.orderNow-img img:hover {
+    transform: scale(1.1); /* Smooth zoom in */
+}
+
+
+/*---------------------------family line---------------------------------------------*/
+
+.family-line {
+	margin-top: 4%;
+	margin-left: 6%;
+	font-size: 20px;
+}
+.family-line span{
+	color: #f57a26;
+}
+
+/*----------------------------review------------------------------------*/
+
+.review-container{
+	display: flex;
+	margin-top: 5%;
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-bottom: 4%;
+}
+
+.card{
+	margin-right: 2rem;
+}
+.card img{
+	height: 250px;
+	width: 400px;
+	border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	
+}
+
+
+
